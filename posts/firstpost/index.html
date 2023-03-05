@@ -173,45 +173,45 @@ Here is how I built this blog.
 I used the <a href="https://themes.gohugo.io/themes/gokarna/">Gokarna</a> theme from Hugo themes.</p>
 <h1 id="using-hugo">Using hugo</h1>
 <p>I followed the instructions from <a href="https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#installation/">here</a>.</p>
-<pre tabindex="0"><code>hugo new site &lt;project_name&gt;
-cd &lt;project_name&gt;
-</code></pre><h1 id="adding-the-theme">Adding the theme</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site &lt;project_name&gt;
+</span></span><span style="display:flex;"><span>cd &lt;project_name&gt;
+</span></span></code></pre></div><h1 id="adding-the-theme">Adding the theme</h1>
 <p>I used github pages for hosting the Webpage.
 To separate the whole source code and the built code in different repositories, I first deleted the <code>public</code> directory.</p>
-<pre tabindex="0"><code>rmdir public
-git init
-git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
-git remote add origin &lt;repository_for_whole_code&gt;
-git submodule add -b master &lt;repository_for_public_directory&gt; public
-</code></pre><h1 id="setting-the-basic-configuration">Setting the basic configuration</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>rmdir public
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
+</span></span><span style="display:flex;"><span>git remote add origin &lt;repository_for_whole_code&gt;
+</span></span><span style="display:flex;"><span>git submodule add -b master &lt;repository_for_public_directory&gt; public
+</span></span></code></pre></div><h1 id="setting-the-basic-configuration">Setting the basic configuration</h1>
 <p>I changed the config.toml file as the basic configuration shown in the installation wiki.</p>
-<pre tabindex="0"><code>baseURL = &#34;&lt;github.io url&gt;&#34;
-defaultContentLanguage = &#34;en&#34;
-languageCode = &#34;en-us&#34;
-title = &#34;\U0001F34A cyhwang blog&#34;
-theme = &#34;gokarna&#34;
-</code></pre><p>Also, I added some code for the menu and Home page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;&lt;github.io url&gt;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;\U0001F34A cyhwang blog&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;gokarna&#34;</span>
+</span></span></code></pre></div><p>Also, I added some code for the menu and Home page.</p>
 <h1 id="make-the-website">Make the Website</h1>
 <h2 id="testing-the-website">Testing the Website</h2>
-<pre tabindex="0"><code>hugo serve
-</code></pre><p>and go to http://localhost:1313
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo serve
+</span></span></code></pre></div><p>and go to http://localhost:1313
 you will see your website.</p>
 <h2 id="building-the-website">Building the Website</h2>
-<pre tabindex="0"><code>hugo
-</code></pre><p><code>public</code> folder will be generated.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><p><code>public</code> folder will be generated.</p>
 <h2 id="push-to-git-repository">Push to git repository</h2>
 <p>First, push the public repository.</p>
-<pre tabindex="0"><code>cd public
-git add .
-git commit -m &#34;&lt;commit message&gt;&#34;
-git push origin &lt;repository_for_public_directory&gt; &lt;branch_name&gt;
-</code></pre><p>Then, push the whole code.</p>
-<pre tabindex="0"><code>cd ..
-git add .
-git commit -m &#34;&lt;commit message&gt;&#34;
-git push origin &lt;repository_for_whole_code&gt; &lt;branch_name&gt;
-</code></pre><h1 id="note">Note</h1>
-<p>This was my first time using Hugo and making a Website.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;&lt;commit message&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin &lt;repository_for_public_directory&gt; &lt;branch_name&gt;
+</span></span></code></pre></div><p>Then, push the whole code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd ..
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;&lt;commit message&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin &lt;repository_for_whole_code&gt; &lt;branch_name&gt;
+</span></span></code></pre></div><h1 id="note">Note</h1>
+<p>This was my first time using Hugo and making a Website.<br>
 I&rsquo;m still working on using this toml and Markdown.</p>
 
         </p>
