@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 🍊 cyhwang blog</title>
-    <link>https://cyhwang1997.github.io/posts/</link>
+    <link>https://tangerinecy.github.io/posts/</link>
     <description>Recent content in Posts on 🍊 cyhwang blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cyhwang1997.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
-      <link>https://cyhwang1997.github.io/posts/firstpost/</link>
+      <link>https://tangerinecy.github.io/posts/firstpost/</link>
       <pubDate>Sat, 04 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cyhwang1997.github.io/posts/firstpost/</guid>
+      <guid>https://tangerinecy.github.io/posts/firstpost/</guid>
       <description>This is my first post after making the blog. Here is how I built this blog. I used the Gokarna theme from Hugo themes.
 Using hugo I followed the instructions from here.
 hugo new site &amp;lt;project_name&amp;gt; cd &amp;lt;project_name&amp;gt; Adding the theme I used github pages for hosting the Webpage. To separate the whole source code and the built code in different repositories, I first deleted the public directory.
@@ -21,10 +21,10 @@ rmdir public git init git submodule add https://github.</description>
     
     <item>
       <title>코딩 공부 1</title>
-      <link>https://cyhwang1997.github.io/posts/0305codingproblems/</link>
+      <link>https://tangerinecy.github.io/posts/0305codingproblems/</link>
       <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cyhwang1997.github.io/posts/0305codingproblems/</guid>
+      <guid>https://tangerinecy.github.io/posts/0305codingproblems/</guid>
       <description>자료구조, 알고리즘 공부를 위해 코딩테스트 문제 풀기로 결심.
 우선 레벨 0부터 풀기 시작.
 레벨 0는 간단해서 하루에 여러개 풀어서 얼른 끝내야겠다.
