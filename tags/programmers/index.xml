@@ -6,7 +6,18 @@
     <description>Recent content in Programmers on 🍊 cyhwang blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/tags/programmers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/tags/programmers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>코딩 공부 2</title>
+      <link>https://tangerinecy.github.io/posts/0306/</link>
+      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tangerinecy.github.io/posts/0306/</guid>
+      <description>문제1. 약수 구하기 url: https://school.programmers.co.kr/learn/courses/30/lessons/120897
+문제 설명 정수 n이 매개변수로 주어질 때, n의 약수를 오름차순으로 담은 배열을 return하도록 solution 함수를 완성해주세요.
+제한 사항 1 $\leq$ n $\leq$ 10000. 입출력 예 n result 24 [1,2,3,4,6,8,12,24] 29 [1,29] 코드 및 설명 #include &amp;lt;string&amp;gt; #include &amp;lt;vector&amp;gt; using namespace std; vector&amp;lt;int&amp;gt; solution(int n) { vector&amp;lt;int&amp;gt; answer; for (int i = 1; i &amp;lt;= n; i++) { if (n % i == 0) { answer.push_back(i); } } return answer; } for문을 사용하여 n 이하의 모든 양의 정수에 대해서 나눴을 때 나머지가 0이면 vector에 push back하였다.</description>
+    </item>
+    
     <item>
       <title>코딩 공부 1</title>
       <link>https://tangerinecy.github.io/posts/0305codingproblems/</link>
