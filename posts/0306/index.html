@@ -202,6 +202,7 @@
 </tbody>
 </table>
 <h3 id="코드-및-설명">코드 및 설명</h3>
+<p>c++</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
@@ -219,6 +220,17 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>for문을 사용하여 n 이하의 모든 양의 정수에 대해서 나눴을 때 나머지가 0이면 vector에 push back하였다.</p>
+<p>python 풀이</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(n):
+</span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> n <span style="color:#f92672">%</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            answer<span style="color:#f92672">.</span>append(i)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer
+</span></span></code></pre></div><p>다른 사람 풀이</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(n):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">if</span> n<span style="color:#f92672">%</span>i <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>]
+</span></span></code></pre></div><p>저렇게 안에 if 쓸 수 있는지 몰랐다.</p>
 <h2 id="문제2-369게임">문제2. 369게임</h2>
 <p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120891">https://school.programmers.co.kr/learn/courses/30/lessons/120891</a></p>
 <h3 id="문제-설명-1">문제 설명</h3>
@@ -272,7 +284,11 @@ int형을 string으로 바꿀 때는 to_string, string을 int형으로 바꿀 �
 </span></span><span style="display:flex;"><span>    answer<span style="color:#f92672">++</span>;
 </span></span><span style="display:flex;"><span>  order <span style="color:#f92672">/=</span> <span style="color:#ae81ff">10</span>;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="문제3-주사위의-개수">문제3. 주사위의 개수</h2>
+</span></span></code></pre></div><p>python 풀이</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(order):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> str(order)<span style="color:#f92672">.</span>count(<span style="color:#e6db74">&#39;3&#39;</span>) <span style="color:#f92672">+</span> str(order)<span style="color:#f92672">.</span>count(<span style="color:#e6db74">&#39;6&#39;</span>) <span style="color:#f92672">+</span> str(order)<span style="color:#f92672">.</span>count(<span style="color:#e6db74">&#39;9&#39;</span>)
+</span></span></code></pre></div><p>string형.count함수가 있다. 해당 문자가 있는 횟수를 센다.</p>
+<h2 id="문제3-주사위의-개수">문제3. 주사위의 개수</h2>
 <p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120845">https://school.programmers.co.kr/learn/courses/30/lessons/120845</a></p>
 <h3 id="문제-설명-2">문제 설명</h3>
 <blockquote>
@@ -324,6 +340,10 @@ int형을 string으로 바꿀 때는 to_string, string을 int형으로 바꿀 �
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>가로, 세로, 높이를 모두 n으로 나눠서 나오는 몫(정수)를 곱했다.<br>
 괄호를 넣지 않은 경우 순서대로 연산을 해서 그런가 중간에 나누어 떨어져서인지 테스트 2가 실패로 떴다.</p>
+<p>python 풀이</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(box, n):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (box[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">//</span>n) <span style="color:#f92672">*</span> (box[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">//</span>n) <span style="color:#f92672">*</span> (box[<span style="color:#ae81ff">2</span>]<span style="color:#f92672">//</span>n)
+</span></span></code></pre></div><p>python에는 몫을 구하는 연산 // 이 따로 있다. 그냥 나눗셈 / 을 하면 float형이 나온다.</p>
 <h2 id="문제4-외계행성의-나이">문제4. 외계행성의 나이</h2>
 <p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120834">https://school.programmers.co.kr/learn/courses/30/lessons/120834</a></p>
 <h3 id="문제-설명-3">문제 설명</h3>
@@ -385,6 +405,15 @@ int형을 string으로 바꿀 때는 to_string, string을 int형으로 바꿀 �
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> answer;
 </span></span></code></pre></div><p>와 이건 생각도 못 했다. 생각해보면 age를 string으로 바꾼 후 거기에 &lsquo;0&rsquo;을 빼면 그 int값이 나올 것이고, 거기에 &lsquo;a&rsquo;를 더하면 해당 알파벳이 나올 것이다. 대단하다..</p>
+<p>python 풀이</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(age):
+</span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> str(age):
+</span></span><span style="display:flex;"><span>        answer <span style="color:#f92672">+=</span> chr(int(i) <span style="color:#f92672">+</span> <span style="color:#ae81ff">97</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer
+</span></span></code></pre></div><p>다른 사람 풀이를 참고했다. 파이썬에서는 string형끼리의 뺄셈은 못하나보다. 그리고 string형에 int형을 더할 수도 없다. 그래서 ascii code에서 a가 97임을 이용해서 우선 int형으로 해당 문자를 구한 후 이를 char형으로 바꾼다.<br>
+한 가지 더, 파이썬에서는 char형으로의 형변환을 chr()로 한다.<br>
+a의 ascii code를 기억 못 할 경우 ord()를 사용하여 ord(&lsquo;a&rsquo;)로 a의 정수형 ascii code를 구할 수 있다.</p>
 <h2 id="문제5-인덱스-바꾸기">문제5. 인덱스 바꾸기</h2>
 <p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120895">https://school.programmers.co.kr/learn/courses/30/lessons/120895</a></p>
 <h3 id="문제-설명-4">문제 설명</h3>
@@ -441,6 +470,18 @@ int형을 string으로 바꿀 때는 to_string, string을 int형으로 바꿀 �
 이것도 다른 사람 풀이를 확인하니까 swap 함수를 사용하는 게 제일 깔끔했다.<br>
 algorithm 라이브러리에 있는 함수인줄 알았는데 STL에 있는 함수였다..
 정말 기본적인 함수도 잘 모른다는 걸 알게됐다..</p>
+<p>python 풀이</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(my_string, num1, num2):
+</span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    l <span style="color:#f92672">=</span> list(my_string)
+</span></span><span style="display:flex;"><span>    tmp <span style="color:#f92672">=</span> l[num1]
+</span></span><span style="display:flex;"><span>    l[num1] <span style="color:#f92672">=</span> l[num2]
+</span></span><span style="display:flex;"><span>    l[num2] <span style="color:#f92672">=</span> tmp
+</span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(l)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer
+</span></span></code></pre></div><p>c++처럼 string의 값을 직접 바꿀 수 없어서, list로 바꾼 후에 다시 string으로 바꿔야한다. 다만, 여기서도 c++의 swap처럼</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>l[num1], l[num2] <span style="color:#f92672">=</span> l[num2], l[num1]
+</span></span></code></pre></div><p>이렇게 바로 바꿀 수 있다.</p>
 <h2 id="총평">총평</h2>
 <p>우선 오늘은 문제4에서의 다른 사람 풀이가 가장 인상적이었다.<br>
 문제5에서 swap을 사용하는 것도 정말 기본 STL에 있는 함수들도 잘 기억을 못 한다는 걸 깨닫고 다시 공부하기로 결심!<br>

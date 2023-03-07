@@ -205,6 +205,7 @@
 </tbody>
 </table>
 <h3 id="코드-및-설명">코드 및 설명</h3>
+<p>c++</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
@@ -217,6 +218,9 @@
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer;
 </span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(n):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)]
 </span></span></code></pre></div><p>for문을 사용하여 1 부터 n 이하까지의 홀수를 answer에 push_back 했다.</p>
 <h2 id="문제2-최댓값-만들기-1">문제2. 최댓값 만들기 (1)</h2>
 <p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120847">https://school.programmers.co.kr/learn/courses/30/lessons/120847</a></p>
@@ -249,6 +253,7 @@
 </tbody>
 </table>
 <h3 id="코드-및-설명-1">코드 및 설명</h3>
+<p>c++</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;algorithm&gt;</span><span style="color:#75715e">
@@ -262,6 +267,10 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer;
 </span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(numbers):
+</span></span><span style="display:flex;"><span>    numbers<span style="color:#f92672">.</span>sort(reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> numbers[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> numbers[<span style="color:#ae81ff">1</span>]
 </span></span></code></pre></div><p>원소 두 개를 곱해 만들 수 있는 최댓값은 가장 큰 수 2개의 곱이다.
 algorithm 라이브러리에 있는 sort를 사용하여 vector를 내림차순으로 정렬한다.
 그리고 맨 첫 두 원소의 곱을 구하면 된다.</p>
@@ -300,6 +309,7 @@ algorithm 라이브러리에 있는 sort를 사용하여 vector를 내림차순�
 </tbody>
 </table>
 <h3 id="코드-및-설명-2">코드 및 설명</h3>
+<p>c++</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;algorithm&gt;</span><span style="color:#75715e">
@@ -315,6 +325,10 @@ algorithm 라이브러리에 있는 sort를 사용하여 vector를 내림차순�
 </span></span><span style="display:flex;"><span>        answer <span style="color:#f92672">=</span> numbers[numbers.size()<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">*</span> numbers[numbers.size()<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>];
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer;
 </span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(numbers):
+</span></span><span style="display:flex;"><span>    numbers<span style="color:#f92672">.</span>sort()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> max(numbers[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">*</span>numbers[<span style="color:#ae81ff">1</span>], numbers[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">*</span>numbers[<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>])
 </span></span></code></pre></div><p>(1)과 다르게 (2)에서는 음수도 포함된다. 그리고 입출력 예에서 볼 수 있듯이 음수끼리 곱해서 양수 최댓값이 나올 수도 있다.
 그래서 생각한 방법은, 음수끼리 곱했을 때 나올 수 있는 최댓값, 양수끼리 곱해서 나올 수 있는 최댓값을 구하면 둘 중 더 큰 값이 답일 것이다.<br>
 그래서 (1)과 마찬가지로 algorithm 라이브러리에 있는 sort를 이용하여 answer를 이번에는 올림차순으로 정렬을 한다.
@@ -355,6 +369,7 @@ algorithm 라이브러리에 있는 max 함수를 사용하였다.</p>
 </tbody>
 </table>
 <h3 id="코드-및-설명-3">코드 및 설명</h3>
+<p>c++</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
@@ -376,6 +391,16 @@ algorithm 라이브러리에 있는 max 함수를 사용하였다.</p>
 </span></span></code></pre></div><p>이런 방법이 있었다.
 string이 생성자로 사용될 수 있어서 string(size_t count, char ch) 을 사용하여, count 만큼의 문자 ch를 가진 문자열을 생성한다. 참고: <a href="https://modoocode.com/237">모두의 코드</a>
 string 생성자에 대해서 더 공부를 해야겠다.</p>
+<p>python 풀이</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(my_string, n):
+</span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> my_string:
+</span></span><span style="display:flex;"><span>        answer <span style="color:#f92672">+=</span> i <span style="color:#f92672">*</span> n
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer
+</span></span></code></pre></div><p>python으로는 이렇게 풀었는데 다른 사람 풀이 보니까</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(i<span style="color:#f92672">*</span>n <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> my_string)
+</span></span></code></pre></div><p>이 방법이 신기했다.
+아직 파이썬이 익숙하지 않아서 함수를 잘 모른다..</p>
 <h2 id="문제5-편지">문제5. 편지</h2>
 <p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120898">https://school.programmers.co.kr/learn/courses/30/lessons/120898</a></p>
 <h3 id="문제-설명-4">문제 설명</h3>
@@ -409,6 +434,7 @@ string 생성자에 대해서 더 공부를 해야겠다.</p>
 </tbody>
 </table>
 <h3 id="코드-및-설명-4">코드 및 설명</h3>
+<p>c++</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
@@ -419,6 +445,9 @@ string 생성자에 대해서 더 공부를 해야겠다.</p>
 </span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> message.length() <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer;
 </span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(message):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> len(message) <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
 </span></span></code></pre></div><p>string length 구해서 거기에 2를 곱했다.</p>
 <h2 id="총평">총평</h2>
 <p>Lv.0라 다 쉽게 풀 수 있었다.

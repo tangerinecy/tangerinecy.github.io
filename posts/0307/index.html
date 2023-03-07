@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>코딩 공부 3</title>
+    <meta name="description" content="프로그래머스 Lv.0 코테 공부 3일차">
+    <meta name="keywords" content='Lv.0, Programmers'>
+
+    <meta property="og:url" content="https://tangerinecy.github.io/posts/0307/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="코딩 공부 3">
+    <meta property="og:description" content="프로그래머스 Lv.0 코테 공부 3일차">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="코딩 공부 3">
+    <meta name="twitter:description" content="프로그래머스 Lv.0 코테 공부 3일차">
+    <meta property="twitter:domain" content="https://tangerinecy.github.io/posts/0307/">
+    <meta property="twitter:url" content="https://tangerinecy.github.io/posts/0307/">
+    <meta name="twitter:image" content="">
+
+    
+    <link rel="canonical" href="https://tangerinecy.github.io/posts/0307/" />
+
+    <link rel="stylesheet" type="text/css" href="https://tangerinecy.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://tangerinecy.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://tangerinecy.github.io//css/dark.css">
+
+    <script src="https://tangerinecy.github.io//js/svg-injector.min.js"></script>
+    <script src="https://tangerinecy.github.io//js/feather-icons.min.js"></script>
+    <script src="https://tangerinecy.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://tangerinecy.github.io/">🍊 cyhwang blog</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/aboutme/"><span data-feather='user'></span> About Me </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/cyhwang1997"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/aboutme/"><span data-feather='user'></span> About Me </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/cyhwang1997"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>코딩 공부 3</h1>
+        <small role="doc-subtitle">프로그래머스 Lv.0 코테 공부 3일차</small>
+        <p class="post-date">
+            March 7, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://tangerinecy.github.io/tags/lv.0">Lv.0</a></li>
+        
+            <li class="post-tag"><a href="https://tangerinecy.github.io/tags/programmers">Programmers</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h2 id="문제1-아이스-아메리카노">문제1. 아이스 아메리카노</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120819">https://school.programmers.co.kr/learn/courses/30/lessons/120819</a></p>
+<h3 id="문제-설명">문제 설명</h3>
+<blockquote>
+<p>머쓱이는 추운 날에도 아이스 아메리카노만 마십니다. 아이스 아메리카노는 한잔에 5,500원입니다. 머쓱이가 가지고 있는 돈 <code>money</code>가 매개변수로 주어질 때, 머쓱이가 최대로 마실 수 있는 아메리카노의 잔 수와 남는 돈을 순서대로 담은 배열을 return 하도록 solution 함수를 완성해보세요.</p>
+</blockquote>
+<h3 id="제한-사항">제한 사항</h3>
+<ul>
+<li>0 &lt; <code>money</code> $\leq$ 1,000,000</li>
+</ul>
+<h3 id="입출력-예">입출력 예</h3>
+<table>
+<thead>
+<tr>
+<th>money</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5,500</td>
+<td>[1,0]</td>
+</tr>
+<tr>
+<td>15,000</td>
+<td>[2,4000]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="코드-및-설명">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(money):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [money<span style="color:#f92672">//</span><span style="color:#ae81ff">5500</span>, money<span style="color:#f92672">%</span><span style="color:#ae81ff">5500</span>]
+</span></span></code></pre></div><p>몫과 나머지 구하는 문제.</p>
+<h2 id="문제2-짝수-홀수-개수">문제2. 짝수 홀수 개수</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120824">https://school.programmers.co.kr/learn/courses/30/lessons/120824</a></p>
+<h3 id="문제-설명-1">문제 설명</h3>
+<blockquote>
+<p>정수가 담긴 리스트 <code>num_list</code>가 주어질 때, <code>num_list</code>의 원소 중 짝수와 홀수의 개수를 담은 배열을 return 하도록 solution 함수를 완성해보세요.</p>
+</blockquote>
+<h3 id="제한-사항-1">제한 사항</h3>
+<ul>
+<li>1 $\leq$ <code>num_list</code>의 길이 $\leq$ 100</li>
+<li>0 $\leq$ <code>num_list</code>의 원소 $\leq$ 1,000</li>
+</ul>
+<h3 id="입출력-예-1">입출력 예</h3>
+<table>
+<thead>
+<tr>
+<th>numbers</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[1,2,3,4,5]</td>
+<td>[2,3]</td>
+</tr>
+<tr>
+<td>[1,3,5,7]</td>
+<td>[0,4]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="코드-및-설명-1">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(num_list):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [len([i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> num_list <span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>]), len([i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> num_list <span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>])]
+</span></span></code></pre></div><p>이렇게 풀었는데 다른 사람 풀이에서 인덱스를 이용해서 한 방법이 있었다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>answer[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> num_list:
+</span></span><span style="display:flex;"><span>    answer[n <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> answer
+</span></span></code></pre></div><p>이 방법도 신기했다.</p>
+<h2 id="문제3-특정-문자-제거하기">문제3. 특정 문자 제거하기</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120826">https://school.programmers.co.kr/learn/courses/30/lessons/120826</a></p>
+<h3 id="문제-설명-2">문제 설명</h3>
+<blockquote>
+<p>문자열 <code>my_string</code>과 문자 <code>letter</code>이 매개변수로 주어집니다. <code>my_string</code>에서 <code>letter</code>를 제거한 문자열을 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-2">제한 사항</h3>
+<ul>
+<li>1 $\leq$ <code>my_string</code>의 길이 $\leq$ 100</li>
+<li><code>letter</code>은 길이가 1인 영문자입니다.</li>
+<li><code>my_string</code>과 <code>letter</code>은 알파벳 대소문자로 이루어져 있습니다.</li>
+<li>대문자와 소문자를 구분합니다.</li>
+</ul>
+<h3 id="입출력-예-2">입출력 예</h3>
+<table>
+<thead>
+<tr>
+<th>my_string</th>
+<th>letter</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&ldquo;abcdef&rdquo;</td>
+<td>&ldquo;f&rdquo;</td>
+<td>&ldquo;abcde&rdquo;</td>
+</tr>
+<tr>
+<td>&ldquo;BCBdbe&rdquo;</td>
+<td>&ldquo;B&rdquo;</td>
+<td>&ldquo;Cdbe&rdquo;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="코드-및-설명-2">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(my_string, letter):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> my_string<span style="color:#f92672">.</span>replace(letter,<span style="color:#e6db74">&#39;&#39;</span>)
+</span></span></code></pre></div><p>replace를 사용하여 해당 문자를 없앴다.</p>
+<h2 id="문제4-배열-두배-만들기">문제4. 배열 두배 만들기</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120809">https://school.programmers.co.kr/learn/courses/30/lessons/120809</a></p>
+<h3 id="문제-설명-3">문제 설명</h3>
+<blockquote>
+<p>정수 배열 <code>numbers</code>가 매개변수로 주어집니다. <code>numbers</code>의 각 원소에 두배한 원소를 가진 배열을 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-3">제한 사항</h3>
+<ul>
+<li>-10,000 $\leq$ <code>numbers</code>의 원소 $\leq$ 10,000</li>
+<li>1 $\leq$ <code>numbers</code>의 길이 $\leq$ 1,000</li>
+</ul>
+<h3 id="입출력-예-3">입출력 예</h3>
+<table>
+<thead>
+<tr>
+<th>numbers</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[1,2,3,4,5]</td>
+<td>[2,4,6,8,10]</td>
+</tr>
+<tr>
+<td>[1,2,100,-99,1,2,3]</td>
+<td>[2,4,200,-198,2,4,6]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="코드-및-설명-3">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(numbers):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [i<span style="color:#f92672">*</span><span style="color:#ae81ff">2</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> numbers]
+</span></span></code></pre></div><p>python으로 하니까 코드가 엄청 짧아졌다.</p>
+<h2 id="문제5-점의-위치-구하기">문제5. 점의 위치 구하기</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120841">https://school.programmers.co.kr/learn/courses/30/lessons/120841</a></p>
+<h3 id="문제-설명-4">문제 설명</h3>
+<blockquote>
+<p>사분면은 한 평면을 x축과 y축을 기준으로 나눈 네 부분입니다. 사분면은 아래와 같이 1부터 4까지 번호를매깁니다.<br>
+x 좌표 (x, y)를 차례대로 담은 정수 배열 <code>dot</code>이 매개변수로 주어집니다. 좌표 <code>dot</code>이 사분면 중 어디에 속하는지 1, 2, 3, 4 중 하나를 return 하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-4">제한 사항</h3>
+<ul>
+<li><code>dot</code>의 길이 = 2</li>
+<li><code>dot[0]</code>은 x좌표를, <code>dot[1]</code>은 y좌표를 나타냅니다</li>
+<li>-500 $\leq$ <code>dot</code>의 원소 $\leq$ 500</li>
+<li><code>dot</code>의 원소는 0이 아닙니다.</li>
+</ul>
+<h3 id="입출력-예-4">입출력 예</h3>
+<table>
+<thead>
+<tr>
+<th>dot</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[2,4]</td>
+<td>1</td>
+</tr>
+<tr>
+<td>[-7,9]</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="코드-및-설명-4">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(dot):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> dot[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> dot[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            answer <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            answer <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> dot [<span style="color:#ae81ff">1</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            answer <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            answer <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer
+</span></span></code></pre></div><p>더 간단한 방법이 있을 것 같은데 잘 모르겠어서 일단 이렇게 코드를 짜 봤다.<br>
+제일 인상적이었던 다른 사람 코드</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(dot):
+</span></span><span style="display:flex;"><span>    quad <span style="color:#f92672">=</span> [(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">2</span>),(<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">1</span>)]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> quad[dot[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>][dot[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>]
+</span></span></code></pre></div><p>dot[0] &gt; 0, 즉 x좌표가 0 이상일 경우 true로 quad[1] = (4,1)로 들어간다. 그리고 dot[1] &gt; 0인 경우 quad[][1]로 들어간다. 이렇게 해서 각 4분면을 적절히 찾을 수 있도록 했다.</p>
+<h2 id="총평">총평</h2>
+<p>오늘부터 언어를 파이썬으로 바꿔서 풀기 시작했다. 파이썬을 실제로 다룬 적이 많이 없어서 모르는 게 너무 많다. 자료형도 더 다양해서 찾아보면서 했다.<br>
+[]는 배열이 아닌 리스트이고, ()는 튜플이고.. 등등..<br>
+또 이전 코딩 공부 포스트에 파이썬 코드도 추가하느라 오늘은 조금 오래 걸렸다.<br>
+파이썬 화이팅!!</p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#문제1-아이스-아메리카노">문제1. 아이스 아메리카노</a>
+          <ul>
+            <li><a href="#문제-설명">문제 설명</a></li>
+            <li><a href="#제한-사항">제한 사항</a></li>
+            <li><a href="#입출력-예">입출력 예</a></li>
+            <li><a href="#코드-및-설명">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제2-짝수-홀수-개수">문제2. 짝수 홀수 개수</a>
+          <ul>
+            <li><a href="#문제-설명-1">문제 설명</a></li>
+            <li><a href="#제한-사항-1">제한 사항</a></li>
+            <li><a href="#입출력-예-1">입출력 예</a></li>
+            <li><a href="#코드-및-설명-1">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제3-특정-문자-제거하기">문제3. 특정 문자 제거하기</a>
+          <ul>
+            <li><a href="#문제-설명-2">문제 설명</a></li>
+            <li><a href="#제한-사항-2">제한 사항</a></li>
+            <li><a href="#입출력-예-2">입출력 예</a></li>
+            <li><a href="#코드-및-설명-2">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제4-배열-두배-만들기">문제4. 배열 두배 만들기</a>
+          <ul>
+            <li><a href="#문제-설명-3">문제 설명</a></li>
+            <li><a href="#제한-사항-3">제한 사항</a></li>
+            <li><a href="#입출력-예-3">입출력 예</a></li>
+            <li><a href="#코드-및-설명-3">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제5-점의-위치-구하기">문제5. 점의 위치 구하기</a>
+          <ul>
+            <li><a href="#문제-설명-4">문제 설명</a></li>
+            <li><a href="#제한-사항-4">제한 사항</a></li>
+            <li><a href="#입출력-예-4">입출력 예</a></li>
+            <li><a href="#코드-및-설명-4">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#총평">총평</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 cyhwang</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
