@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>코딩 공부 1</title>
+    <meta name="description" content="프로그래머스 Lv.0 코테 공부">
+    <meta name="keywords" content='Lv.0, Programmers'>
+
+    <meta property="og:url" content="https://tangerinecy.github.io/posts/0305/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="코딩 공부 1">
+    <meta property="og:description" content="프로그래머스 Lv.0 코테 공부">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="코딩 공부 1">
+    <meta name="twitter:description" content="프로그래머스 Lv.0 코테 공부">
+    <meta property="twitter:domain" content="https://tangerinecy.github.io/posts/0305/">
+    <meta property="twitter:url" content="https://tangerinecy.github.io/posts/0305/">
+    <meta name="twitter:image" content="">
+
+    
+    <link rel="canonical" href="https://tangerinecy.github.io/posts/0305/" />
+
+    <link rel="stylesheet" type="text/css" href="https://tangerinecy.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://tangerinecy.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://tangerinecy.github.io//css/dark.css">
+
+    <script src="https://tangerinecy.github.io//js/svg-injector.min.js"></script>
+    <script src="https://tangerinecy.github.io//js/feather-icons.min.js"></script>
+    <script src="https://tangerinecy.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://tangerinecy.github.io/">🍊 cyhwang blog</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/aboutme/"><span data-feather='user'></span> About Me </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/cyhwang1997"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/aboutme/"><span data-feather='user'></span> About Me </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/cyhwang1997"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>코딩 공부 1</h1>
+        <small role="doc-subtitle">프로그래머스 Lv.0 코테 공부</small>
+        <p class="post-date">
+            March 5, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://tangerinecy.github.io/tags/lv.0">Lv.0</a></li>
+        
+            <li class="post-tag"><a href="https://tangerinecy.github.io/tags/programmers">Programmers</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <p>자료구조, 알고리즘 공부를 위해 코딩테스트 문제 풀기로 결심.<br>
+우선 레벨 0부터 풀기 시작.<br>
+레벨 0는 간단해서 하루에 여러개 풀어서 얼른 끝내야겠다.</p>
+<h2 id="문제1-짝수는-싫어요">문제1. 짝수는 싫어요</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120813">https://school.programmers.co.kr/learn/courses/30/lessons/120813</a></p>
+<h3 id="문제-설명">문제 설명</h3>
+<blockquote>
+<p>정수 n이 매개변수로 주어질 때, n 이하의 홀수가 오름차순으로 담긴 배열을 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항">제한 사항</h3>
+<ul>
+<li>1 $\leq$ n $\leq$ 100</li>
+</ul>
+<h3 id="입출력-예">입출력 예</h3>
+<table>
+<thead>
+<tr>
+<th>n</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>[1,3,5,7,9]</td>
+</tr>
+<tr>
+<td>15</td>
+<td>[1,3,5,7,9,11,13,15]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="코드-및-설명">코드 및 설명</h3>
+<p>c++</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> solution(<span style="color:#66d9ef">int</span> n) {
+</span></span><span style="display:flex;"><span>    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> answer;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; i<span style="color:#f92672">+=</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>        answer.push_back(i);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(n):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)]
+</span></span></code></pre></div><p>for문을 사용하여 1 부터 n 이하까지의 홀수를 answer에 push_back 했다.</p>
+<h2 id="문제2-최댓값-만들기-1">문제2. 최댓값 만들기 (1)</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120847">https://school.programmers.co.kr/learn/courses/30/lessons/120847</a></p>
+<h3 id="문제-설명-1">문제 설명</h3>
+<blockquote>
+<p>정수 배열 <code>numbers</code>가 매개변수로 주어집니다. <code>numbers</code>의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-1">제한 사항</h3>
+<ul>
+<li>0 $\leq$ <code>numbers</code>의 원소 $\leq$ 10,000</li>
+<li>2 $\leq$ <code>numbers</code>의 원소 $\leq$ 100</li>
+</ul>
+<h3 id="입출력-예-1">입출력 예</h3>
+<table>
+<thead>
+<tr>
+<th>numbers</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[1,2,3,4,5]</td>
+<td>20</td>
+</tr>
+<tr>
+<td>[0,31,24,10,1,9]</td>
+<td>744</td>
+</tr>
+</tbody>
+</table>
+<h3 id="코드-및-설명-1">코드 및 설명</h3>
+<p>c++</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;algorithm&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">solution</span>(vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> numbers) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> answer <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    sort(numbers.rbegin(), numbers.rend());
+</span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> numbers[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> numbers[<span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(numbers):
+</span></span><span style="display:flex;"><span>    numbers<span style="color:#f92672">.</span>sort(reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> numbers[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> numbers[<span style="color:#ae81ff">1</span>]
+</span></span></code></pre></div><p>원소 두 개를 곱해 만들 수 있는 최댓값은 가장 큰 수 2개의 곱이다.
+algorithm 라이브러리에 있는 sort를 사용하여 vector를 내림차순으로 정렬한다.
+그리고 맨 첫 두 원소의 곱을 구하면 된다.</p>
+<h2 id="문제3-최댓값-만들기-2">문제3. 최댓값 만들기 (2)</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120862">https://school.programmers.co.kr/learn/courses/30/lessons/120862</a></p>
+<h3 id="문제-설명-2">문제 설명</h3>
+<blockquote>
+<p>정수 배열 <code>numbers</code>가 매개변수로 주어집니다. <code>numbers</code>의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-2">제한 사항</h3>
+<ul>
+<li>-10,000 $\leq$ <code>numbers</code>의 원소 $\leq$ 10,000</li>
+<li>2 $\leq$ <code>numbers</code>의 길이 $\leq$ 100</li>
+</ul>
+<h3 id="입출력-예-2">입출력 예</h3>
+<table>
+<thead>
+<tr>
+<th>numbers</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[1,2,-3,4,-5]</td>
+<td>15</td>
+</tr>
+<tr>
+<td>[0,-31,24,10,1,9]</td>
+<td>240</td>
+</tr>
+<tr>
+<td>[10,20,30,5,5,20,5]</td>
+<td>600</td>
+</tr>
+</tbody>
+</table>
+<h3 id="코드-및-설명-2">코드 및 설명</h3>
+<p>c++</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;algorithm&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">solution</span>(vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> numbers) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> answer <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    sort(numbers.begin(), numbers.end());
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (numbers[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> numbers[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">&gt;</span> numbers[numbers.size()<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">*</span> numbers[numbers.size()<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>])
+</span></span><span style="display:flex;"><span>        answer <span style="color:#f92672">=</span> numbers[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">*</span> numbers[<span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>        answer <span style="color:#f92672">=</span> numbers[numbers.size()<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">*</span> numbers[numbers.size()<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(numbers):
+</span></span><span style="display:flex;"><span>    numbers<span style="color:#f92672">.</span>sort()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> max(numbers[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">*</span>numbers[<span style="color:#ae81ff">1</span>], numbers[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">*</span>numbers[<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>])
+</span></span></code></pre></div><p>(1)과 다르게 (2)에서는 음수도 포함된다. 그리고 입출력 예에서 볼 수 있듯이 음수끼리 곱해서 양수 최댓값이 나올 수도 있다.
+그래서 생각한 방법은, 음수끼리 곱했을 때 나올 수 있는 최댓값, 양수끼리 곱해서 나올 수 있는 최댓값을 구하면 둘 중 더 큰 값이 답일 것이다.<br>
+그래서 (1)과 마찬가지로 algorithm 라이브러리에 있는 sort를 이용하여 answer를 이번에는 올림차순으로 정렬을 한다.
+그러면 첫 2개가 음수일 경우엔, 이 둘의 곱이 음수끼리의 곱 중 최댓값이 되고, 마지막 2개가 양수일 경우엔, 이 둘의 곱이 양수끼리의 곱 중 최&gt;댓값이 된다.
+첫 2개가 음수가 아니어도, 마지막 2개가 양수가 아니어도 다른 쪽이 최댓값이 나오므로 괜찮다.
+이 둘을 비교하여 더 큰 값을 answer에 넣는다.</p>
+<p>다른 사람 풀이를 보니 if문을 사용하지 않고</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>max(numbers[numbers.size()<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">*</span> numbers[numbers.size()<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>], numbers[<span style="color:#ae81ff">0</span>], numbers[<span style="color:#ae81ff">1</span>])
+</span></span></code></pre></div><p>을 하였다.<br>
+algorithm 라이브러리에 있는 max 함수를 사용하였다.</p>
+<h2 id="문제4-문자-반복-출력하기">문제4. 문자 반복 출력하기</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120825">https://school.programmers.co.kr/learn/courses/30/lessons/120825</a></p>
+<h3 id="문제-설명-3">문제 설명</h3>
+<blockquote>
+<p>문자열 <code>my_string</code>과 정수 <code>n</code>이 매개변수로 주어질 때, <code>my_string</code>에 들어있는 각 문자를 <code>n</code>만큼 반복한 문자열을 return 하도록 solution 함수를 완성해보세요.</p>
+</blockquote>
+<h3 id="제한-사항-3">제한 사항</h3>
+<ul>
+<li>2 $\leq$ <code>my_string</code> 길이 $\leq$ 5</li>
+<li>2 $\leq$ <code>n</code> $\leq$ 10</li>
+<li>&ldquo;my_string&quot;은 영어 대소문자로 이루어져 있습니다.</li>
+</ul>
+<h3 id="입출력-예-3">입출력 예</h3>
+<table>
+<thead>
+<tr>
+<th>my_string</th>
+<th>n</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&ldquo;hello&rdquo;</td>
+<td>3</td>
+<td>&ldquo;hhheeellllllooo&rdquo;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="코드-및-설명-3">코드 및 설명</h3>
+<p>c++</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>string <span style="color:#a6e22e">solution</span>(string my_string, <span style="color:#66d9ef">int</span> n) {
+</span></span><span style="display:flex;"><span>    string answer <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> my_string.size(); i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> n; j<span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>          answer <span style="color:#f92672">+=</span> my_string[i];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>이중 for문을 사용하였다.
+더 간단한 방법을 찾지 못해서 이렇게 풀고 다른 사람 풀이를 봤는데</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">auto</span> v : my_string) {
+</span></span><span style="display:flex;"><span>  answer <span style="color:#f92672">+=</span> string(n,v);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>이런 방법이 있었다.
+string이 생성자로 사용될 수 있어서 string(size_t count, char ch) 을 사용하여, count 만큼의 문자 ch를 가진 문자열을 생성한다. 참고: <a href="https://modoocode.com/237">모두의 코드</a>
+string 생성자에 대해서 더 공부를 해야겠다.</p>
+<p>python 풀이</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(my_string, n):
+</span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> my_string:
+</span></span><span style="display:flex;"><span>        answer <span style="color:#f92672">+=</span> i <span style="color:#f92672">*</span> n
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer
+</span></span></code></pre></div><p>python으로는 이렇게 풀었는데 다른 사람 풀이 보니까</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(i<span style="color:#f92672">*</span>n <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> my_string)
+</span></span></code></pre></div><p>이 방법이 신기했다.
+아직 파이썬이 익숙하지 않아서 함수를 잘 모른다..</p>
+<h2 id="문제5-편지">문제5. 편지</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120898">https://school.programmers.co.kr/learn/courses/30/lessons/120898</a></p>
+<h3 id="문제-설명-4">문제 설명</h3>
+<blockquote>
+<p>머쓱이는 할머니께 생신 축하 편지를 쓰려고 합니다. 할머니가 보시기 편하도록 글자 한 자 한 자를 가로 2cm 크기로 적으려고 하며, 편지를 가&gt;로로만 적을 때, 축하 문구 <code>message</code>를 적기 위해 필요한 편지지의 최소 가로길이를 return 하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-4">제한 사항</h3>
+<ul>
+<li>공백도 하나의 문자로 취급합니다.</li>
+<li>1 $\leq$ message의 길이 $\leq$ 50</li>
+<li>편지지의 여백은 생각하지 않습니다.</li>
+<li><code>message</code>는 영문 알파벳 대소문자, &lsquo;!&rsquo;, &lsquo;~&rsquo; 또는 공백으로만 이루어져 있습니다.</li>
+</ul>
+<h3 id="입출력-예-4">입출력 예</h3>
+<table>
+<thead>
+<tr>
+<th>message</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&ldquo;happy birthday!&rdquo;</td>
+<td>30</td>
+</tr>
+<tr>
+<td>&ldquo;I love you~&rdquo;</td>
+<td>22</td>
+</tr>
+</tbody>
+</table>
+<h3 id="코드-및-설명-4">코드 및 설명</h3>
+<p>c++</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">solution</span>(string message) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> answer <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> message.length() <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(message):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> len(message) <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><p>string length 구해서 거기에 2를 곱했다.</p>
+<h2 id="총평">총평</h2>
+<p>Lv.0라 다 쉽게 풀 수 있었다.
+문제 4에서 string 생성자에 대해서 다시 공부를 해야겠다.</p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#문제1-짝수는-싫어요">문제1. 짝수는 싫어요</a>
+          <ul>
+            <li><a href="#문제-설명">문제 설명</a></li>
+            <li><a href="#제한-사항">제한 사항</a></li>
+            <li><a href="#입출력-예">입출력 예</a></li>
+            <li><a href="#코드-및-설명">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제2-최댓값-만들기-1">문제2. 최댓값 만들기 (1)</a>
+          <ul>
+            <li><a href="#문제-설명-1">문제 설명</a></li>
+            <li><a href="#제한-사항-1">제한 사항</a></li>
+            <li><a href="#입출력-예-1">입출력 예</a></li>
+            <li><a href="#코드-및-설명-1">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제3-최댓값-만들기-2">문제3. 최댓값 만들기 (2)</a>
+          <ul>
+            <li><a href="#문제-설명-2">문제 설명</a></li>
+            <li><a href="#제한-사항-2">제한 사항</a></li>
+            <li><a href="#입출력-예-2">입출력 예</a></li>
+            <li><a href="#코드-및-설명-2">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제4-문자-반복-출력하기">문제4. 문자 반복 출력하기</a>
+          <ul>
+            <li><a href="#문제-설명-3">문제 설명</a></li>
+            <li><a href="#제한-사항-3">제한 사항</a></li>
+            <li><a href="#입출력-예-3">입출력 예</a></li>
+            <li><a href="#코드-및-설명-3">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제5-편지">문제5. 편지</a>
+          <ul>
+            <li><a href="#문제-설명-4">문제 설명</a></li>
+            <li><a href="#제한-사항-4">제한 사항</a></li>
+            <li><a href="#입출력-예-4">입출력 예</a></li>
+            <li><a href="#코드-및-설명-4">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#총평">총평</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 cyhwang</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

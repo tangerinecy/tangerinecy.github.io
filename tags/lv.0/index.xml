@@ -6,7 +6,18 @@
     <description>Recent content in Lv.0 on 🍊 cyhwang blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/tags/lv.0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/tags/lv.0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>코딩 공부 4</title>
+      <link>https://tangerinecy.github.io/posts/0308/</link>
+      <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tangerinecy.github.io/posts/0308/</guid>
+      <description>문제1. 한 번만 등장한 문자 url: https://school.programmers.co.kr/learn/courses/30/lessons/120896
+문제 설명 문자열 s가 매개변수로 주어집니다. s에서 한 번만 등장하는 문자를 사전 순으로 정렬한 문자열을 return 하도록 solution 함수를 완성해보세요. 한 번만 등장하는 문자가 없을 경우 빈 문자열을 return 합니다.
+제한 사항 0 &amp;lt; s의 길이 &amp;lt; 1,000 코드 및 설명 def solution(s): answer = &amp;#39;&amp;#39; l_answer = [] for a in s: if s.count(a) == 1: l_answer += a l_answer.sort() return &amp;#39;&amp;#39;.join(i for i in l_answer) 문자열 정렬을 해야되는데 string인 상태로는 정렬을 못해서, 우선 리스트에 넣고 정렬을 한 후에 이를 string으로 바꾸는 과정을 수행했다.</description>
+    </item>
+    
     <item>
       <title>코딩 공부 3</title>
       <link>https://tangerinecy.github.io/posts/0307/</link>
@@ -32,10 +43,10 @@
     
     <item>
       <title>코딩 공부 1</title>
-      <link>https://tangerinecy.github.io/posts/0305codingproblems/</link>
+      <link>https://tangerinecy.github.io/posts/0305/</link>
       <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://tangerinecy.github.io/posts/0305codingproblems/</guid>
+      <guid>https://tangerinecy.github.io/posts/0305/</guid>
       <description>자료구조, 알고리즘 공부를 위해 코딩테스트 문제 풀기로 결심.
 우선 레벨 0부터 풀기 시작.
 레벨 0는 간단해서 하루에 여러개 풀어서 얼른 끝내야겠다.
