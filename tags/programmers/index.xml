@@ -6,7 +6,18 @@
     <description>Recent content in Programmers on 🍊 cyhwang blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/tags/programmers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/tags/programmers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>코딩 공부 5</title>
+      <link>https://tangerinecy.github.io/posts/0309/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tangerinecy.github.io/posts/0309/</guid>
+      <description>문제1. 영어가 싫어요 url: https://school.programmers.co.kr/learn/courses/30/lessons/120894
+문제 설명 영어가 싫은 머쓱이는 영어로 표기되어있는 숫자를 수로 바꾸려고 합니다. 문자열 numbers가 매개변수로 주어질 때, numbers를 정수로 바꿔 return 하도록 solution 함수를 완성해 주세요.
+제한 사항 numbers는 소문자로만 구성되어 있습니다. numbers는 &amp;ldquo;zero&amp;rdquo;, &amp;ldquo;one&amp;rdquo;, &amp;ldquo;two&amp;rdquo;, &amp;ldquo;three&amp;rdquo;, &amp;ldquo;four&amp;rdquo;, &amp;ldquo;five&amp;rdquo;, &amp;ldquo;six&amp;rdquo;, &amp;ldquo;seven&amp;rdquo;, &amp;ldquo;eight&amp;rdquo;, &amp;ldquo;nine&amp;rdquo; 들이 공백 없이 조합되어 있습니다. 1 $\leq$ numbers의 길이 $\leq$ 50 &amp;ldquo;zero&amp;quot;는 numbers의 맨 앞에 올 수 없습니다. 코드 및 설명 def solution(numbers): str_number = [&amp;#34;zero&amp;#34;, &amp;#34;one&amp;#34;, &amp;#34;two&amp;#34;, &amp;#34;three&amp;#34;, &amp;#34;four&amp;#34;, &amp;#34;five&amp;#34;, &amp;#34;six&amp;#34;, &amp;#34;seven&amp;#34;, &amp;#34;eight&amp;#34;, &amp;#34;nine&amp;#34;] for i in str_number: numbers = numbers.</description>
+    </item>
+    
     <item>
       <title>코딩 공부 4</title>
       <link>https://tangerinecy.github.io/posts/0308/</link>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>코딩 공부 5</title>
+    <meta name="description" content="프로그래머스 Lv.0 코테 공부 5일차">
+    <meta name="keywords" content='Lv.0, Programmers'>
+
+    <meta property="og:url" content="https://tangerinecy.github.io/posts/0309/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="코딩 공부 5">
+    <meta property="og:description" content="프로그래머스 Lv.0 코테 공부 5일차">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="코딩 공부 5">
+    <meta name="twitter:description" content="프로그래머스 Lv.0 코테 공부 5일차">
+    <meta property="twitter:domain" content="https://tangerinecy.github.io/posts/0309/">
+    <meta property="twitter:url" content="https://tangerinecy.github.io/posts/0309/">
+    <meta name="twitter:image" content="">
+
+    
+    <link rel="canonical" href="https://tangerinecy.github.io/posts/0309/" />
+
+    <link rel="stylesheet" type="text/css" href="https://tangerinecy.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://tangerinecy.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://tangerinecy.github.io//css/dark.css">
+
+    <script src="https://tangerinecy.github.io//js/svg-injector.min.js"></script>
+    <script src="https://tangerinecy.github.io//js/feather-icons.min.js"></script>
+    <script src="https://tangerinecy.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://tangerinecy.github.io/">🍊 cyhwang blog</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/aboutme/"><span data-feather='user'></span> About Me </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/cyhwang1997"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/aboutme/"><span data-feather='user'></span> About Me </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/cyhwang1997"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>코딩 공부 5</h1>
+        <small role="doc-subtitle">프로그래머스 Lv.0 코테 공부 5일차</small>
+        <p class="post-date">
+            March 9, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://tangerinecy.github.io/tags/lv.0">Lv.0</a></li>
+        
+            <li class="post-tag"><a href="https://tangerinecy.github.io/tags/programmers">Programmers</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h2 id="문제1-영어가-싫어요">문제1. 영어가 싫어요</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120894">https://school.programmers.co.kr/learn/courses/30/lessons/120894</a></p>
+<h3 id="문제-설명">문제 설명</h3>
+<blockquote>
+<p>영어가 싫은 머쓱이는 영어로 표기되어있는 숫자를 수로 바꾸려고 합니다. 문자열 <code>numbers</code>가 매개변수로 주어질 때, <code>numbers</code>를 정수로 바꿔 return 하도록 solution 함수를 완성해 주세요.</p>
+</blockquote>
+<h3 id="제한-사항">제한 사항</h3>
+<ul>
+<li><code>numbers</code>는 소문자로만 구성되어 있습니다.</li>
+<li><code>numbers</code>는 &ldquo;zero&rdquo;, &ldquo;one&rdquo;, &ldquo;two&rdquo;, &ldquo;three&rdquo;, &ldquo;four&rdquo;, &ldquo;five&rdquo;, &ldquo;six&rdquo;, &ldquo;seven&rdquo;, &ldquo;eight&rdquo;, &ldquo;nine&rdquo; 들이 공백 없이 조합되어 있습니다.</li>
+<li>1 $\leq$ <code>numbers</code>의 길이 $\leq$ 50</li>
+<li>&ldquo;zero&quot;는 <code>numbers</code>의 맨 앞에 올 수 없습니다.</li>
+</ul>
+<h3 id="코드-및-설명">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(numbers):
+</span></span><span style="display:flex;"><span>    str_number <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;zero&#34;</span>, <span style="color:#e6db74">&#34;one&#34;</span>, <span style="color:#e6db74">&#34;two&#34;</span>, <span style="color:#e6db74">&#34;three&#34;</span>, <span style="color:#e6db74">&#34;four&#34;</span>, <span style="color:#e6db74">&#34;five&#34;</span>, <span style="color:#e6db74">&#34;six&#34;</span>, <span style="color:#e6db74">&#34;seven&#34;</span>, <span style="color:#e6db74">&#34;eight&#34;</span>, <span style="color:#e6db74">&#34;nine&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> str_number:
+</span></span><span style="display:flex;"><span>        numbers <span style="color:#f92672">=</span> numbers<span style="color:#f92672">.</span>replace(i, str(str_number<span style="color:#f92672">.</span>index(i)))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> int(numbers)
+</span></span></code></pre></div><p>이 문제는 살짝 어려웠다. 문제 배점도 4점이었다!<br>
+우선 이 문제에서 헤맸던 부분은 문자열.replace가 replace를 한 string을 return한다는 점이다.<br>
+이걸 모르고 그냥 numbers.replace()로만 써서 왜 답이 안 나오지? 했는데 string을 return해서 그걸 다시 문자열에 넣어야됐었다..<br>
+이 문제도 다른 사람 풀이를 보니까 enumerate을 사용하면 좋을 듯!</p>
+<h2 id="문제2-몫-구하기">문제2. 몫 구하기</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120805">https://school.programmers.co.kr/learn/courses/30/lessons/120805</a></p>
+<h3 id="문제-설명-1">문제 설명</h3>
+<blockquote>
+<p>정수 <code>num1</code>, <code>num2</code>가 매개변수로 주어질 때, <code>num1</code>을 <code>num2</code>로 나눈 몫을 return 하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-1">제한 사항</h3>
+<ul>
+<li>0 $\leq$ <code>num1</code> $\leq$ 100</li>
+<li>0 $\leq$ <code>num2</code> $\leq$ 100</li>
+</ul>
+<h3 id="코드-및-설명-1">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(num1, num2):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> num1 <span style="color:#f92672">//</span> num2
+</span></span></code></pre></div><h2 id="문제3-두-수의-합">문제3. 두 수의 합</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120802">https://school.programmers.co.kr/learn/courses/30/lessons/120802</a></p>
+<h3 id="문제-설명-2">문제 설명</h3>
+<blockquote>
+<p>정수 <code>num1</code>과 <code>num2</code>가 주어질 때, <code>num1</code>과 <code>num2</code>의 합을 return하도록 soltuion 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-2">제한 사항</h3>
+<ul>
+<li>-50,000 $\leq$ <code>num1</code> $\leq$ 50,000</li>
+<li>-50,000 $\leq$ <code>num2</code> $\leq$ 50,000</li>
+</ul>
+<h3 id="코드-및-설명-2">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(num1, num2):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> num1 <span style="color:#f92672">+</span> num2
+</span></span></code></pre></div><h2 id="문제4-두-수의-차">문제4. 두 수의 차</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120803">https://school.programmers.co.kr/learn/courses/30/lessons/120803</a></p>
+<h3 id="문제-설명-3">문제 설명</h3>
+<blockquote>
+<p>정수 <code>num1</code>과 <code>num2</code>가 주어질 때, <code>num1</code>에서 <code>num2</code>를 뺀 값을 return하도록 soltuion 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-3">제한 사항</h3>
+<ul>
+<li>-50,000 $\leq$ <code>num1</code> $\leq$ 50,000</li>
+<li>-50,000 $\leq$ <code>num2</code> $\leq$ 50,000</li>
+</ul>
+<h3 id="코드-및-설명-3">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(num1, num2):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> num1 <span style="color:#f92672">-</span> num2
+</span></span></code></pre></div><p>두 수의 합에서도 그렇고, 다른 사람 풀이에서 lambda가 무엇인지 좀 찾아봐야겠다.</p>
+<h2 id="문제5-두-수의-곱">문제5. 두 수의 곱</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120804">https://school.programmers.co.kr/learn/courses/30/lessons/120804</a></p>
+<h3 id="문제-설명-4">문제 설명</h3>
+<blockquote>
+<p>정수 <code>num1</code>, <code>num2</code>가 매개변수 주어집니다. <code>num1</code>과 <code>num2</code>를 곱한 값을 return 하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-4">제한 사항</h3>
+<ul>
+<li>0 $\leq$ <code>num1</code> $\leq$ 100</li>
+<li>0 $\leq$ <code>num2</code> $\leq$ 100</li>
+</ul>
+<h3 id="코드-및-설명-4">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(num1, num2):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> num1 <span style="color:#f92672">*</span> num2
+</span></span></code></pre></div><h2 id="문제6-나머지-구하기">문제6. 나머지 구하기</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120810">https://school.programmers.co.kr/learn/courses/30/lessons/120810</a></p>
+<h3 id="문제-설명-5">문제 설명</h3>
+<blockquote>
+<p>정수 <code>num1</code>, <code>num2</code>가 매개변수 주어질 때, <code>num1</code>를 <code>num2</code>로 나눈 나머지를 return 하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-5">제한 사항</h3>
+<ul>
+<li>0 &lt; <code>num1</code> $\leq$ 100</li>
+<li>0 &lt; <code>num2</code> $\leq$ 100</li>
+</ul>
+<h3 id="코드-및-설명-5">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(num1, num2):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> num1 <span style="color:#f92672">%</span> num2
+</span></span></code></pre></div><p>여기서도 divmod라는 함수를 알게 됐다.<br>
+divmod는 인자로 받은 두 수를 나눠서 몫, 나머지를 tuple로 반환하는 함수이다.</p>
+<h2 id="문제7-두-수의-나눗셈">문제7. 두 수의 나눗셈</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120810">https://school.programmers.co.kr/learn/courses/30/lessons/120810</a></p>
+<h3 id="문제-설명-6">문제 설명</h3>
+<blockquote>
+<p>정수 <code>num1</code>, <code>num2</code>가 매개변수 주어질 때, <code>num1</code>를 <code>num2</code>로 나눈 값에 1,000을 곱한 후 정수 부분을 return 하도록 soltuion 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-6">제한 사항</h3>
+<ul>
+<li>0 &lt; <code>num1</code> $\leq$ 100</li>
+<li>0 &lt; <code>num2</code> $\leq$ 100</li>
+</ul>
+<h3 id="코드-및-설명-6">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(num1, num2):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> int(num1<span style="color:#f92672">/</span>num2 <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>)
+</span></span></code></pre></div><h2 id="총평">총평</h2>
+<p>항상 중간에 있는 문제들을 아무거나 골라서 풀었는데, 오늘은 앞 문제들을 풀었다.<br>
+앞 문제들이 너무 쉬워서 몇 문제 더 풀었다.</p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#문제1-영어가-싫어요">문제1. 영어가 싫어요</a>
+          <ul>
+            <li><a href="#문제-설명">문제 설명</a></li>
+            <li><a href="#제한-사항">제한 사항</a></li>
+            <li><a href="#코드-및-설명">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제2-몫-구하기">문제2. 몫 구하기</a>
+          <ul>
+            <li><a href="#문제-설명-1">문제 설명</a></li>
+            <li><a href="#제한-사항-1">제한 사항</a></li>
+            <li><a href="#코드-및-설명-1">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제3-두-수의-합">문제3. 두 수의 합</a>
+          <ul>
+            <li><a href="#문제-설명-2">문제 설명</a></li>
+            <li><a href="#제한-사항-2">제한 사항</a></li>
+            <li><a href="#코드-및-설명-2">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제4-두-수의-차">문제4. 두 수의 차</a>
+          <ul>
+            <li><a href="#문제-설명-3">문제 설명</a></li>
+            <li><a href="#제한-사항-3">제한 사항</a></li>
+            <li><a href="#코드-및-설명-3">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제5-두-수의-곱">문제5. 두 수의 곱</a>
+          <ul>
+            <li><a href="#문제-설명-4">문제 설명</a></li>
+            <li><a href="#제한-사항-4">제한 사항</a></li>
+            <li><a href="#코드-및-설명-4">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제6-나머지-구하기">문제6. 나머지 구하기</a>
+          <ul>
+            <li><a href="#문제-설명-5">문제 설명</a></li>
+            <li><a href="#제한-사항-5">제한 사항</a></li>
+            <li><a href="#코드-및-설명-5">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제7-두-수의-나눗셈">문제7. 두 수의 나눗셈</a>
+          <ul>
+            <li><a href="#문제-설명-6">문제 설명</a></li>
+            <li><a href="#제한-사항-6">제한 사항</a></li>
+            <li><a href="#코드-및-설명-6">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#총평">총평</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 cyhwang</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
