@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>코딩 공부 6</title>
+    <meta name="description" content="프로그래머스 Lv.0 코테 공부 6일차">
+    <meta name="keywords" content='Lv.0, Programmers'>
+
+    <meta property="og:url" content="https://tangerinecy.github.io/posts/0310/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="코딩 공부 6">
+    <meta property="og:description" content="프로그래머스 Lv.0 코테 공부 6일차">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="코딩 공부 6">
+    <meta name="twitter:description" content="프로그래머스 Lv.0 코테 공부 6일차">
+    <meta property="twitter:domain" content="https://tangerinecy.github.io/posts/0310/">
+    <meta property="twitter:url" content="https://tangerinecy.github.io/posts/0310/">
+    <meta name="twitter:image" content="">
+
+    
+    <link rel="canonical" href="https://tangerinecy.github.io/posts/0310/" />
+
+    <link rel="stylesheet" type="text/css" href="https://tangerinecy.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://tangerinecy.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://tangerinecy.github.io//css/dark.css">
+
+    <script src="https://tangerinecy.github.io//js/svg-injector.min.js"></script>
+    <script src="https://tangerinecy.github.io//js/feather-icons.min.js"></script>
+    <script src="https://tangerinecy.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://tangerinecy.github.io/">🍊 cyhwang blog</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/aboutme/"><span data-feather='user'></span> About Me </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://tangerinecy.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/cyhwang1997"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/aboutme/"><span data-feather='user'></span> About Me </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://tangerinecy.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/cyhwang1997"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>코딩 공부 6</h1>
+        <small role="doc-subtitle">프로그래머스 Lv.0 코테 공부 6일차</small>
+        <p class="post-date">
+            March 10, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://tangerinecy.github.io/tags/lv.0">Lv.0</a></li>
+        
+            <li class="post-tag"><a href="https://tangerinecy.github.io/tags/programmers">Programmers</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h2 id="문제1-숫자-비교하기">문제1. 숫자 비교하기</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120807">https://school.programmers.co.kr/learn/courses/30/lessons/120807</a></p>
+<h3 id="문제-설명">문제 설명</h3>
+<blockquote>
+<p>정수 <code>num1</code>과 <code>num2</code>가 매개변수로 주어집니다. 두 수가 같으면 1 다르면 -1을 retrun하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항">제한 사항</h3>
+<ul>
+<li>0 $\leq$ <code>num1</code> $\leq$ 10,000</li>
+<li>0 $\leq$ <code>num2</code> $\leq$ 10,000</li>
+</ul>
+<h3 id="코드-및-설명">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(num1, num2):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> num1 <span style="color:#f92672">==</span> num2 <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>c++에 삼항 연산자가 있듯이 python에도 삼항 연산자가 있다.<br>
+삼항 연산자를 이용해서 풀었다.</p>
+<h2 id="문제2-분수의-덧셈">문제2. 분수의 덧셈</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120808">https://school.programmers.co.kr/learn/courses/30/lessons/120808</a></p>
+<h3 id="문제-설명-1">문제 설명</h3>
+<blockquote>
+<p>첫 번째 분수의 분자와 분모를 뜻하는 <code>numer1</code>, <code>denom1</code>, 두 번째 분수의 분자와 분모를 뜻하는 <code>numer2</code>, <code>denom2</code>가 매개변수로 주어집니다. 두 분수를 더한 값을 기약 분수로 나타냈을 때 분자와 분모를 순서대로 담은 배열을 return 하도록 solution 함수를 완성해보세요.</p>
+</blockquote>
+<h3 id="제한-사항-1">제한 사항</h3>
+<ul>
+<li>0 &lt; <code>numer1</code>, <code>denom1</code>, <code>numer2</code>, <code>denom2</code> &lt; 1,000</li>
+</ul>
+<h3 id="코드-및-설명-1">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> math <span style="color:#f92672">import</span> gcd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(numer1, denom1, numer2, denom2):
+</span></span><span style="display:flex;"><span>    numer <span style="color:#f92672">=</span> (numer1 <span style="color:#f92672">*</span> denom2 <span style="color:#f92672">+</span> numer2 <span style="color:#f92672">*</span> denom1)
+</span></span><span style="display:flex;"><span>    denom <span style="color:#f92672">=</span> denom1 <span style="color:#f92672">*</span> denom2
+</span></span><span style="display:flex;"><span>    gcd1 <span style="color:#f92672">=</span> gcd(numer, denom)
+</span></span><span style="display:flex;"><span>    numer <span style="color:#f92672">//=</span> gcd1
+</span></span><span style="display:flex;"><span>    denom <span style="color:#f92672">//=</span> gcd1
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [numer, denom]
+</span></span></code></pre></div><p>이 문제는 좀 어려웠다.<br>
+처음에는 분모끼리의 최소공배수를 구해서 풀었는데, 테스트 케이스 통과를 못 했다.<br>
+질문하기에서 다른 사람들 질문을 확인하니까 8/2 + 8/2 같이 처음에 주어진 분수가 약분이 될 경우, 그리고 결과로 나온 분수도 약분이 될 수도 있기 때문에 최소공배수가 아닌 최대공약수를 구해서 나누는 방식으로 해야된다.<br>
+그리고 처음에는 gcd(numer, denom)을 따로 변수에 저장하지 않고 그냥 사용했는데,<br>
+numer //= gcd(numer, denom)을 하면서 numer 값이 바뀌니까 그 다음 denom //= gcd(numer, denom)에서 최대공약수가 다른 값으로 나온다.<br>
+그래서 변수를 만들어 최대공약수를 따로 저장해두고 구하는 방식으로 했다.</p>
+<p>이번에 알게된 건 math 라이브러리에 최대공약수를 구하는 gcd 함수가 있다는 것이다.</p>
+<h2 id="문제3-나이-출력">문제3. 나이 출력</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120820">https://school.programmers.co.kr/learn/courses/30/lessons/120820</a></p>
+<h3 id="문제-설명-2">문제 설명</h3>
+<blockquote>
+<p>머쓱이는 40살인 선생님이 몇 년도에 태어났는지 궁금해졌습니다. 나이 <code>age</code>가 주어질 때, 2022년을 기준 출생 연도를 return 하는 solution 함수를 완성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-2">제한 사항</h3>
+<ul>
+<li>0 &lt; age $\leq$ 120</li>
+<li>나이는 태어난 연도에 1살이며 1년마다 1씩 증가합니다.</li>
+</ul>
+<h3 id="코드-및-설명-2">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(age):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">2022</span> <span style="color:#f92672">-</span> age <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><h2 id="문제4-각도기">문제4. 각도기</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120829">https://school.programmers.co.kr/learn/courses/30/lessons/120829</a></p>
+<h3 id="문제-설명-3">문제 설명</h3>
+<blockquote>
+<p>각에서 0도 초과 90도 미만은 예각, 90도는 직각, 90도 초과 180도 미만은 둔각 180도는 평각으로 분류합니다. 각 <code>angle</code>이 매개변수로 주어질 때 예각일 때 1, 직각일 때 2, 둔각일 때 3, 평각일 때 4를 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+<ul>
+<li>예각 : 0 &lt; <code>angle</code> &lt; 90</li>
+<li>직각 : <code>angle</code> = 90</li>
+<li>둔각 : 90 &lt; <code>angle</code> &lt; 180</li>
+<li>평각 : <code>angle</code> = 180</li>
+</ul>
+<h3 id="제한-사항-3">제한 사항</h3>
+<ul>
+<li>0 &lt; <code>angle</code> $\leq$ 180</li>
+<li><code>angle</code>은 정수입니다.</li>
+</ul>
+<h3 id="코드-및-설명-3">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(angle):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> angle <span style="color:#f92672">==</span> <span style="color:#ae81ff">180</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> angle <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">90</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> angle <span style="color:#f92672">==</span> <span style="color:#ae81ff">90</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><h2 id="문제5-짝수의-합">문제5. 짝수의 합</h2>
+<p>url: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120831">https://school.programmers.co.kr/learn/courses/30/lessons/120831</a></p>
+<h3 id="문제-설명-4">문제 설명</h3>
+<blockquote>
+<p>정수 <code>n</code>이 주어질 때, <code>n</code>이하의 짝수를 모두 더한 값을 return 하도록 solution 함수를 작성해주세요.</p>
+</blockquote>
+<h3 id="제한-사항-4">제한 사항</h3>
+<ul>
+<li>0 &lt; <code>n</code> $\leq$ 1000</li>
+</ul>
+<h3 id="코드-및-설명-4">코드 및 설명</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">solution</span>(n):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sum([i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range (<span style="color:#ae81ff">1</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>])
+</span></span></code></pre></div><p>다른 사람 풀이 확인하니까, [i for i in range (2, n + 1, 2)] 이렇게 step을 추가하면 된다.</p>
+<h2 id="총평">총평</h2>
+<p>이번엔 문제2. 분수의 덧셈이 제일 어려웠다.</p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#문제1-숫자-비교하기">문제1. 숫자 비교하기</a>
+          <ul>
+            <li><a href="#문제-설명">문제 설명</a></li>
+            <li><a href="#제한-사항">제한 사항</a></li>
+            <li><a href="#코드-및-설명">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제2-분수의-덧셈">문제2. 분수의 덧셈</a>
+          <ul>
+            <li><a href="#문제-설명-1">문제 설명</a></li>
+            <li><a href="#제한-사항-1">제한 사항</a></li>
+            <li><a href="#코드-및-설명-1">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제3-나이-출력">문제3. 나이 출력</a>
+          <ul>
+            <li><a href="#문제-설명-2">문제 설명</a></li>
+            <li><a href="#제한-사항-2">제한 사항</a></li>
+            <li><a href="#코드-및-설명-2">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제4-각도기">문제4. 각도기</a>
+          <ul>
+            <li><a href="#문제-설명-3">문제 설명</a></li>
+            <li><a href="#제한-사항-3">제한 사항</a></li>
+            <li><a href="#코드-및-설명-3">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#문제5-짝수의-합">문제5. 짝수의 합</a>
+          <ul>
+            <li><a href="#문제-설명-4">문제 설명</a></li>
+            <li><a href="#제한-사항-4">제한 사항</a></li>
+            <li><a href="#코드-및-설명-4">코드 및 설명</a></li>
+          </ul>
+        </li>
+        <li><a href="#총평">총평</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 cyhwang</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
