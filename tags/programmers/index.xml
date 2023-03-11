@@ -6,7 +6,18 @@
     <description>Recent content in Programmers on 🍊 cyhwang blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/tags/programmers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/tags/programmers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>코딩 공부 7</title>
+      <link>https://tangerinecy.github.io/posts/0311/</link>
+      <pubDate>Sat, 11 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tangerinecy.github.io/posts/0311/</guid>
+      <description>문제1. 최빈값 구하기 url: https://school.programmers.co.kr/learn/courses/30/lessons/120812
+문제 설명 최빈값은 주어진 값 중에서 가장 자주 나오는 값을 의미합니다. 정수 배열 array가 매개변수로 주어질 때, 최빈값을 return 하도록 solution 함수를 완성해보세요. 최빈값이 여러 개면 -1을 return 합니다.
+제한 사항 0 &amp;lt; array의 길이 &amp;lt; 100 0 $\leq$ array의 원소 &amp;lt; 1000 코드 및 설명 def solution(array): num = [array.count(i) for i in set(array)] if num.count(max(num)) &amp;gt; 1: return -1 else: return [i for i in array if array.</description>
+    </item>
+    
     <item>
       <title>코딩 공부 6-1</title>
       <link>https://tangerinecy.github.io/posts/0310_1/</link>
