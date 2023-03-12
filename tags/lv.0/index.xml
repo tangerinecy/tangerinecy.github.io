@@ -6,7 +6,19 @@
     <description>Recent content in Lv.0 on 🍊 cyhwang blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/tags/lv.0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tangerinecy.github.io/tags/lv.0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>코딩 공부 8</title>
+      <link>https://tangerinecy.github.io/posts/0312/</link>
+      <pubDate>Sun, 12 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://tangerinecy.github.io/posts/0312/</guid>
+      <description>문제1. 가까운 수 url: https://school.programmers.co.kr/learn/courses/30/lessons/120890
+문제 설명 정수 배열 array와 정수 n이 매개변수로 주어질 때, array에 들어있는 정수 중 n과 가장 가까운 수를 return 하도록 solution 함수를 완성해주세요.
+코드 및 설명 def solution(array, n): array.sort() abs_array = [abs(i - n) for i in array] return array[abs_array.index(min(abs_array))] 우선 array를 정렬했다. 예제에서는 다 정렬되어 있었는데, 혹시나 테스트 케이스에서는 정렬이 안 됐을 수도 있으니..
+그리고 각 원소에서 n을 뺀 값의 절댓값을 넣은 리스트를 새로 만들었다.</description>
+    </item>
+    
     <item>
       <title>코딩 공부 7</title>
       <link>https://tangerinecy.github.io/posts/0311/</link>
